@@ -65,12 +65,12 @@ var fight = {
                 name: $('#player1 input[name="name"]').val(),
             };
             fight.player1 = new Player1(traits);
-            if (("#ply2").innerHTML = ('cheese')) {
-                $("#bob").removeClass('hide');
-
-                console.log("cheese");
-
-            }
+            // if (("#ply1").value = ('cheese')) {
+            //     $("#bob").removeClass('hide');
+            //     console.log("cheese");
+            // } else {
+            //     console.log("nope");
+            // }
 
         });
 /////Change player 2 name///////
