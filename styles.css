@@ -1,0 +1,120 @@
+* {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+
+.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+    height: 400px;
+    background-image: url("Background.png");
+    background-size: cover !important;
+    background-repeat: no-repeat;
+
+}
+
+
+.submitnames {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 30px;
+}
+
+#player1 {
+    margin: 0;
+    padding: 3px 0 0 3px;
+    flex: 1;
+}
+
+
+#player2 {
+    margin: 0;
+    padding: 3px 3px 0 0;
+
+}
+
+.playernames {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 30px;
+}
+
+
+#ply1 {
+    margin: 0;
+    padding: 0 0 0 3px;
+    min-width: 110px;
+    max-width: 120px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: #00d23e
+}
+
+#vs {
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    text-align: center;
+    color:#dacb2a;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+#ply2 {
+    margin: 0;
+    padding: 0 3px 0 0;
+    min-width: 110px;
+    max-width: 120px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: #cd0d0d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.character-container {
+    margin: 5px;
+    height: 330px;
+    display: inline-block;
+}
+
+#goku {
+    background: url('Goku.png') no-repeat -173px -7px;
+    width: 38px;
+    height: 69px;
+    transform: scale(2);
+    margin: 0 50px;
+    padding: 3px;
+    bottom: 315px;
+    position: absolute;
+    display: block;
+}
+
+.goku.idle {
+    -webkit-animation: idle .8s steps(2) infinite;
+}
+
+@-webkit-keyframes idle {
+    from {
+        background-position: -173px -7px;
+    }
+    to {
+        background-position: -262px -14px;
+    }
+}
