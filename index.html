@@ -8,49 +8,48 @@
 </head>
 <body>
 
-
-
-    <h1 id="status">asdf</h1>
-
-
     <div class="wrapper">
-
-
         <div class="submitnames">
             <form id="player1" action="">
-                <input type="text" id="play1" value="" placeholder="Enter Name">
-                <button type="submit">Submit Name</button>
+                <input type="text" name="name" id="play1" value="" placeholder="Enter Name">
+                <button class="dude" type="submit">Submit Name</button>
             </form>
-
-
             <form id="player2" action="">
-                 <button type="submit">Submit Name</button>
-                 <input type="text" id="play2" value="" placeholder="Enter Name">
+                 <button class="dude" type="submit">Submit Name</button>
+                 <input type="text" name="name" id="play2" value="" placeholder="Enter Name">
             </form>
-
         </div>
 
         <div class="playernames">
             <h1 id="ply1">Player 1</h1>
             <h1 id="vs">vs.</h1>
             <h1 id="ply2">Player 2</h1>
-
         </div>
 
-        <div id="board"></div>
+        <div class="health-bar" data-total="1000" data-value="1000">
+            <progress id="pl1" value="100" max="100">
+
+
+            </progress>
+
+            <progress id="pl2" value="100" max="100">
+
+
+            </progress>
+        </div>
 
         <div class="character-container">
-            <div id="goku" class="goku-idle">
-
-
-            </div>
-
-            <div id="frieza" class="frieza-idle">
-
-
-            </div>
+            <div id="goku" class="goku idle"></div><div class="partone beam hide"></div>
+            <div id="frieza" class="frieza idle"></div>
         </div>
 
+        <button class="startFight hide">BEGIN FIGHT!</button>
+
+        <div class="rounds">
+            <p id="www">0</p>
+            <p id="mmm">0</p>
+
+        </div>
     </div>
 
 

@@ -5,7 +5,9 @@
     box-sizing:border-box;
 }
 
-
+body, html {
+    background-color: black;
+}
 .wrapper {
     margin-right: auto;
     margin-left: auto;
@@ -14,6 +16,7 @@
     background-image: url("Background.png");
     background-size: cover !important;
     background-repeat: no-repeat;
+    margin-top: 100px;
 
 }
 
@@ -39,6 +42,16 @@
 
 }
 
+.dude {
+    margin:0 auto; /* this will center  it */
+    color:black;
+    text-decoration:none;
+    text-align:center;
+    cursor:pointer;
+    border-radius:5px;
+    background-color:gold;
+}
+
 .playernames {
     display: flex;
     margin: 0;
@@ -47,14 +60,17 @@
     height: 30px;
 }
 
+input {
+    background-color: #eef3b5;
+}
 
 #ply1 {
     margin: 0;
     padding: 0 0 0 3px;
     min-width: 110px;
     max-width: 120px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    color: #00d23e
+    text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
+    color: #06dc3b;
 }
 
 #vs {
@@ -62,9 +78,8 @@
     padding: 0;
     flex: 1;
     text-align: center;
-    color:#dacb2a;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-
+    color:gold;
+    text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
 }
 
 #ply2 {
@@ -72,18 +87,112 @@
     padding: 0 3px 0 0;
     min-width: 110px;
     max-width: 120px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    color: #cd0d0d;
+    text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
+    color: red;
+}
+
+
+#pl1 {
+    float: left;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 250px;
+    height: 20px;
+    margin: 8px 3px;
+    border: none;
+}
+
+#pl2 {
+    float: right;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 250px;
+    height: 20px;
+    margin: 8px 3px;
+    border: none;
+}
+
+progress::-webkit-progress-bar {
+    background: white;
+    border-radius: 50px;
+    padding: 2px;
+
+}
+
+progress::-webkit-progress-value {
+    border-radius: 50px;
+    background-color: red;
 }
 
 
 
 
 
+.startFight {
+    display:block; /* change this from inline-block */
+    width:40%; /* setting the width */
+    margin:0 auto; /* this will center  it */
+    position:relative;
+    font-size:30px;
+    color:#fff;
+    text-decoration:none;
+    text-align:center;
+    cursor:pointer;
+    border-radius:5px;
+    background-color:#d50000;
+    bottom: 235px;
+}
+
+.hide {
+    display: none;
+}
+
+
+#cat, #dog {
+    margin:0 auto; /* this will center  it */
+    color:#fff;
+    text-decoration:none;
+    text-align:center;
+    cursor:pointer;
+    border-radius:5px;
+    background-color:#d50000;
+    bottom: 45px;
+    position: relative;
+}
+
+#cat {
+    left: -10px;
+}
+
+#dog {
+    right: 5px;
+}
 
 
 
 
+
+.rounds {
+    bottom: 76px;
+    position: relative;
+    display: block;
+}
+
+
+#www, #mmm, p {
+    display: inline-block;
+    color: white;
+}
+
+#www {
+    float: left;
+    margin: 3px;
+}
+
+#mmm {
+    float:right;
+    margin: 3px;
+}
 
 
 
@@ -92,23 +201,24 @@
     margin: 5px;
     height: 330px;
     display: inline-block;
+    width: 100%;
 }
 
-#goku {
+.goku {
     background: url('Goku.png') no-repeat -173px -7px;
     width: 38px;
     height: 70px;
     transform: scale(2);
     margin: 0;
     padding: 0;
-    bottom: 315px;
+    bottom: 300px;
     position: absolute;
-    left: 300px;
+    left: 350px;
 
 }
 
-.goku-idle {
-    -webkit-animation: gokuidle .8s steps(2) infinite;
+.goku.idle {
+    -webkit-animation: gokuidle .4s steps(2) infinite;
 }
 
 @-webkit-keyframes gokuidle {
@@ -123,21 +233,25 @@
 
 
 
-#frieza {
+
+
+
+
+.frieza {
     background: url('freiza.png') no-repeat -925px -21px;
     width: 62px;
     height: 70px;
     transform: scale(2);
     margin: 0;
     padding: 0;
-    bottom: 315px;
+    bottom: 300px;
     position: absolute;
     right: 300px;
 
 }
 
-.frieza-idle {
-    -webkit-animation: friezaidle .8s steps(2) infinite;
+.frieza.idle {
+    -webkit-animation: friezaidle .4s steps(2) infinite;
 }
 
 @-webkit-keyframes friezaidle {
