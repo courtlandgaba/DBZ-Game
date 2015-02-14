@@ -1,8 +1,7 @@
 $(document).ready(function () {
   fight.init();
+
 });
-
-
 function Player1(spec) {
     var spec = spec || {};
     this.name = spec.name || "Player 1";
@@ -21,7 +20,6 @@ function Player1(spec) {
         };
     }
 }
-
 function Player2(spec) {
     var spec = spec || {};
     this.name = spec.name || "Player 2";
@@ -40,22 +38,14 @@ function Player2(spec) {
         };
     }
 }
+function score1 (spec) {
+    var spec = spec || {};
+    this.score = 5;
 
-
-function score1 () {
+}
+function score2 (spec) {
     this.score = 5;
 }
-
-function score2 () {
-    this.score = 5;
-}
-
-
-
-
-
-
-
 
 var fight = {
     init: function () {
@@ -75,6 +65,12 @@ var fight = {
                 name: $('#player1 input[name="name"]').val(),
             };
             fight.player1 = new Player1(traits);
+            if (("#ply2").innerHTML = ('cheese')) {
+                $("#bob").removeClass('hide');
+
+                console.log("cheese");
+
+            }
 
         });
 /////Change player 2 name///////
@@ -88,7 +84,6 @@ var fight = {
             };
             fight.player2 = new Player2(traits);
             $('.startFight').removeClass('hide');
-
         });
 
 ///////start game button/////
@@ -96,6 +91,14 @@ var fight = {
             event.preventDefault();
             fight.renderBoard();
             $('.startFight').addClass('hide');
+            $("#frieza").addClass("frieza idle");
+            $("#frieza").removeClass("deadfrieza");
+            $("#goku").addClass("goku idle");
+            $("#goku").removeClass("deadgoku");
+            fight.player1.life = 100;
+            fight.player2.life = 100;
+            document.getElementById("pl1").value = fight.player1.life;
+            document.getElementById("pl2").value = fight.player2.life;
         });
 
 //////attack buttons/////
@@ -105,26 +108,38 @@ var fight = {
             document.getElementById("pl2").value = fight.player2.life;
 
             if (0 >= fight.player2.life) {
-            document.getElementById("www").text = fight.score1.score;
-
+                $("#frieza").removeClass("frieza idle");
+                $("#frieza").addClass("deadfrieza");
+                $("#cat").addClass("hide");
+                $("#dog").addClass("hide");
+                $(".startFight").removeClass('hide');
             } else {
-
-            };
+            }
+            //
+            // $("#cat").addClass('hide');
+            // $("#dog").removeClass('hide');
         });
-
 
         $("#frieza").on("click", "#dog", function (e) {
             e.preventDefault();
             fight.player2.attack(fight.player1);
             document.getElementById("pl1").value = fight.player1.life;
+
+            if (0 >= fight.player1.life) {
+                $("#goku").removeClass("goku idle");
+                $("#goku").addClass("deadgoku");
+                $("#dog").addClass("hide");
+                $("#cat").addClass("hide");
+                $(".startFight").removeClass('hide');
+            } else {
+            }
+            //
+            // $("#dog").addClass('hide');
+            // $("#cat").removeClass('hide');
         });
-
-
-
     },
     renderBoard: function () {
-        $("#goku").append("<button id='cat'>Attack</button>");
+        $("#goku").prepend("<button id='cat'>Attack</button>");
         $("#frieza").prepend("<button id='dog'>Attack</button>");
-
     }
 };

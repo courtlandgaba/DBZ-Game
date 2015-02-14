@@ -8,6 +8,9 @@
 body, html {
     background-color: black;
 }
+
+
+
 .wrapper {
     margin-right: auto;
     margin-left: auto;
@@ -30,15 +33,15 @@ body, html {
 }
 
 #player1 {
-    margin: 0;
-    padding: 3px 0 0 3px;
+    margin: 10px 0 0 10px;
+    padding: 0;
     flex: 1;
 }
 
 
 #player2 {
-    margin: 0;
-    padding: 3px 3px 0 0;
+    margin: 10px 10px 0 0;
+    padding: 0;
 
 }
 
@@ -65,8 +68,8 @@ input {
 }
 
 #ply1 {
-    margin: 0;
-    padding: 0 0 0 3px;
+    margin: 0 0 0 10px;
+    padding: 0;
     min-width: 110px;
     max-width: 120px;
     text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
@@ -83,8 +86,8 @@ input {
 }
 
 #ply2 {
-    margin: 0;
-    padding: 0 3px 0 0;
+    margin: 0 10px 0 0;
+    padding: 0;
     min-width: 110px;
     max-width: 120px;
     text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
@@ -96,9 +99,9 @@ input {
     float: left;
     -webkit-appearance: none;
     appearance: none;
-    width: 250px;
+    width: 215px;
     height: 20px;
-    margin: 8px 3px;
+    margin: 8px 10px;
     border: none;
 }
 
@@ -106,9 +109,9 @@ input {
     float: right;
     -webkit-appearance: none;
     appearance: none;
-    width: 250px;
+    width: 215px;
     height: 20px;
-    margin: 8px 3px;
+    margin: 8px 10px;
     border: none;
 }
 
@@ -204,6 +207,22 @@ progress::-webkit-progress-value {
     width: 100%;
 }
 
+
+.deadgoku {
+    background: url('Goku copy.png') no-repeat -2316px -287px;
+    width: 72px;
+    height: 29px;
+    transform: scale(2);
+    margin: 0;
+    padding: 0;
+    bottom: 300px;
+    position: absolute;
+    left: 300px;
+
+}
+
+
+
 .goku {
     background: url('Goku.png') no-repeat -173px -7px;
     width: 38px;
@@ -213,7 +232,7 @@ progress::-webkit-progress-value {
     padding: 0;
     bottom: 300px;
     position: absolute;
-    left: 350px;
+    left: 500px;
 
 }
 
@@ -234,7 +253,18 @@ progress::-webkit-progress-value {
 
 
 
+.deadfrieza {
+    background: url('freiza copy.png') no-repeat -323px -904px;
+    width: 64px;
+    height: 37px;
+    transform: scale(2);
+    margin: 0;
+    padding: 0;
+    bottom: 300px;
+    position: absolute;
+    right: 300px;
 
+}
 
 
 .frieza {
@@ -246,7 +276,7 @@ progress::-webkit-progress-value {
     padding: 0;
     bottom: 300px;
     position: absolute;
-    right: 300px;
+    right: 460px;
 
 }
 
@@ -260,5 +290,28 @@ progress::-webkit-progress-value {
     }
     to {
         background-position: -801px -22px;
+    }
+}
+
+#bob {
+    background: url('bob.png') no-repeat -7px -279px;
+    width: 40px;
+    height: 40px;
+    transform: scale(5);
+    margin: 0;
+    padding: 20px 0 0 20px;
+    position: absolute;
+    bottom: 400px;
+    left: 700px;
+    clear: both;
+    -webkit-animation: bob .6s steps(6) infinite;
+}
+
+@-webkit-keyframes bob {
+    from {
+        background-position: -7px -279px;
+    }
+    to {
+        background-position: -288px -278px;
     }
 }
