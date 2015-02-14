@@ -97,24 +97,54 @@
 #goku {
     background: url('Goku.png') no-repeat -173px -7px;
     width: 38px;
-    height: 69px;
+    height: 70px;
     transform: scale(2);
-    margin: 0 50px;
-    padding: 3px;
+    margin: 0;
+    padding: 0;
     bottom: 315px;
     position: absolute;
-    display: block;
+    left: 300px;
+
 }
 
-.goku.idle {
-    -webkit-animation: idle .8s steps(2) infinite;
+.goku-idle {
+    -webkit-animation: gokuidle .8s steps(2) infinite;
 }
 
-@-webkit-keyframes idle {
+@-webkit-keyframes gokuidle {
     from {
         background-position: -173px -7px;
     }
     to {
         background-position: -262px -14px;
+    }
+}
+
+
+
+
+#frieza {
+    background: url('freiza.png') no-repeat -925px -21px;
+    width: 62px;
+    height: 70px;
+    transform: scale(2);
+    margin: 0;
+    padding: 0;
+    bottom: 315px;
+    position: absolute;
+    right: 300px;
+
+}
+
+.frieza-idle {
+    -webkit-animation: friezaidle .8s steps(2) infinite;
+}
+
+@-webkit-keyframes friezaidle {
+    from {
+        background-position: -925px -21px;
+    }
+    to {
+        background-position: -801px -22px;
     }
 }
