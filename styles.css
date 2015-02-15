@@ -176,26 +176,40 @@ progress::-webkit-progress-value {
 
 
 .rounds {
-    bottom: 76px;
+    bottom: 340px;
     position: relative;
     display: block;
+    width: 100%;
+    height: 10px;
+    font-size: 30px;
+
+
 }
 
 
 #www, #mmm, p {
     display: inline-block;
-    color: white;
+    color: gold;
+
+
 }
 
 #www {
     float: left;
-    margin: 3px;
+    margin: 10px;
+    text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
+
 }
 
 #mmm {
     float:right;
-    margin: 3px;
+    margin: 10px;
+    text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
+
 }
+
+
+
 
 
 
@@ -215,9 +229,9 @@ progress::-webkit-progress-value {
     transform: scale(2);
     margin: 0;
     padding: 0;
-    bottom: 300px;
+    bottom: 350px;
     position: absolute;
-    left: 300px;
+    left: 500px;
 
 }
 
@@ -230,7 +244,7 @@ progress::-webkit-progress-value {
     transform: scale(2);
     margin: 0;
     padding: 0;
-    bottom: 300px;
+    bottom: 350px;
     position: absolute;
     left: 500px;
 
@@ -260,9 +274,9 @@ progress::-webkit-progress-value {
     transform: scale(2);
     margin: 0;
     padding: 0;
-    bottom: 300px;
+    bottom: 350px;
     position: absolute;
-    right: 300px;
+    right: 460px;
 
 }
 
@@ -274,7 +288,7 @@ progress::-webkit-progress-value {
     transform: scale(2);
     margin: 0;
     padding: 0;
-    bottom: 300px;
+    bottom: 350px;
     position: absolute;
     right: 460px;
 
