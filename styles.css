@@ -4,11 +4,9 @@
     -ms-box-sizing:border-box;
     box-sizing:border-box;
 }
-
 body, html {
     background-color: black;
 }
-
 /* #map1 {
 
 }
@@ -20,14 +18,10 @@ body, html {
 #map3 {
 
 } */
-
-
 #cheat {
     color:white;
     position: absolute;
 }
-
-
 .wrapper {
     margin-right: auto;
     margin-left: auto;
@@ -39,8 +33,6 @@ body, html {
     margin-top: 100px;
 
 }
-
-
 .submitnames {
     display: flex;
     margin: 0;
@@ -48,20 +40,15 @@ body, html {
     width: 100%;
     height: 30px;
 }
-
 #player1 {
     margin: 10px 0 0 10px;
     padding: 0;
     flex: 1;
 }
-
-
 #player2 {
     margin: 10px 10px 0 0;
     padding: 0;
-
 }
-
 .dude {
     margin:0 auto; /* this will center  it */
     color:black;
@@ -71,7 +58,6 @@ body, html {
     border-radius:5px;
     background-color:gold;
 }
-
 .playernames {
     display: flex;
     margin: 0;
@@ -79,11 +65,9 @@ body, html {
     width: 100%;
     height: 30px;
 }
-
 input {
     background-color: #eef3b5;
 }
-
 #ply1 {
     margin: 0 0 0 10px;
     padding: 0;
@@ -92,7 +76,6 @@ input {
     text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
     color: #06dc3b;
 }
-
 #vs {
     margin: 0;
     padding: 0;
@@ -101,7 +84,6 @@ input {
     color:gold;
     text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
 }
-
 #ply2 {
     margin: 0 10px 0 0;
     padding: 0;
@@ -110,8 +92,6 @@ input {
     text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
     color: red;
 }
-
-
 #pl1 {
     float: left;
     -webkit-appearance: none;
@@ -121,7 +101,6 @@ input {
     margin: 8px 10px;
     border: none;
 }
-
 #pl2 {
     float: right;
     -webkit-appearance: none;
@@ -131,23 +110,16 @@ input {
     margin: 8px 10px;
     border: none;
 }
-
 progress::-webkit-progress-bar {
     background: white;
     border-radius: 50px;
     padding: 2px;
 
 }
-
 progress::-webkit-progress-value {
     border-radius: 50px;
     background-color: red;
 }
-
-
-
-
-
 .startFight {
     display:block; /* change this from inline-block */
     width:40%; /* setting the width */
@@ -162,12 +134,9 @@ progress::-webkit-progress-value {
     background-color:#d50000;
     bottom: 235px;
 }
-
 .hide {
     display: none;
 }
-
-
 #cat, #dog {
     margin:0 auto; /* this will center  it */
     color:#fff;
@@ -179,66 +148,37 @@ progress::-webkit-progress-value {
     bottom: 45px;
     position: relative;
 }
-
 #cat {
     left: -10px;
 }
-
 #dog {
     right: 5px;
 }
-
-
-
-
-
 .rounds {
-    bottom: 340px;
     position: relative;
     display: block;
     width: 100%;
     height: 10px;
     font-size: 30px;
-
-
 }
-
-
 #www, #mmm, p {
     display: inline-block;
     color: gold;
-
-
 }
-
 #www {
     float: left;
-    margin: 10px;
     text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
-
 }
-
 #mmm {
     float:right;
-    margin: 10px;
     text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
-
 }
-
-
-
-
-
-
-
 .character-container {
     margin: 5px;
     height: 330px;
     display: inline-block;
     width: 100%;
 }
-
-
 .deadgoku {
     background: url('Goku copy.png') no-repeat -2316px -287px;
     width: 72px;
@@ -249,11 +189,7 @@ progress::-webkit-progress-value {
     bottom: 350px;
     position: absolute;
     left: 500px;
-
 }
-
-
-
 .goku {
     background: url('Goku.png') no-repeat -173px -7px;
     width: 38px;
@@ -264,13 +200,10 @@ progress::-webkit-progress-value {
     bottom: 350px;
     position: absolute;
     left: 500px;
-
 }
-
 .goku.idle {
     -webkit-animation: gokuidle .4s steps(2) infinite;
 }
-
 @-webkit-keyframes gokuidle {
     from {
         background-position: -173px -7px;
@@ -279,11 +212,6 @@ progress::-webkit-progress-value {
         background-position: -262px -14px;
     }
 }
-
-
-
-
-
 .deadfrieza {
     background: url('freiza copy.png') no-repeat -323px -904px;
     width: 64px;
@@ -294,10 +222,7 @@ progress::-webkit-progress-value {
     bottom: 350px;
     position: absolute;
     right: 460px;
-
 }
-
-
 .frieza {
     background: url('freiza.png') no-repeat -925px -21px;
     width: 62px;
@@ -308,13 +233,10 @@ progress::-webkit-progress-value {
     bottom: 350px;
     position: absolute;
     right: 460px;
-
 }
-
 .frieza.idle {
     -webkit-animation: friezaidle .4s steps(2) infinite;
 }
-
 @-webkit-keyframes friezaidle {
     from {
         background-position: -925px -21px;
@@ -323,7 +245,6 @@ progress::-webkit-progress-value {
         background-position: -801px -22px;
     }
 }
-
 #bob {
     background: url('bob.png') no-repeat -7px -279px;
     width: 40px;
@@ -337,7 +258,6 @@ progress::-webkit-progress-value {
     clear: both;
     -webkit-animation: bob .6s steps(6) infinite;
 }
-
 @-webkit-keyframes bob {
     from {
         background-position: -7px -279px;
