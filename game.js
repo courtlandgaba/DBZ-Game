@@ -97,6 +97,7 @@ var fight = {
             $('.startFight').removeClass('hide');
             if (value === ('cheese')) {
                 $("#bob").removeClass('hide');
+                document.getElementById("wrapper").style.backgroundImage = "url('pine.png')";
             } else {
             }
         });

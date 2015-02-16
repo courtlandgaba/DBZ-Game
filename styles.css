@@ -164,7 +164,7 @@ progress::-webkit-progress-value {
     cursor:pointer;
     border-radius:5px;
     background-color:#d50000;
-    bottom: 45px;
+    bottom: 25px;
     position: relative;
 }
 #cat {
@@ -205,7 +205,7 @@ progress::-webkit-progress-value {
     transform: scale(2);
     margin: 0;
     padding: 0;
-    bottom: 350px;
+    bottom: 300px;
     position: absolute;
     left: 500px;
 }
@@ -216,7 +216,7 @@ progress::-webkit-progress-value {
     transform: scale(2);
     margin: 0;
     padding: 0;
-    bottom: 350px;
+    bottom: 300px;
     position: absolute;
     left: 500px;
 }
@@ -238,7 +238,7 @@ progress::-webkit-progress-value {
     transform: scale(2);
     margin: 0;
     padding: 0;
-    bottom: 350px;
+    bottom: 300px;
     position: absolute;
     right: 460px;
 }
@@ -249,7 +249,7 @@ progress::-webkit-progress-value {
     transform: scale(2);
     margin: 0;
     padding: 0;
-    bottom: 350px;
+    bottom: 300px;
     position: absolute;
     right: 460px;
 }
