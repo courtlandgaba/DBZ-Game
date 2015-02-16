@@ -80,6 +80,8 @@ var fight = {
             fight.player1 = new Player1(traits);
             if (value === ('cheese')) {
                 $("#bob").removeClass('hide');
+                document.getElementById("wrapper").style.backgroundImage = "url('pine.png')";
+
             } else {
             };
         });
