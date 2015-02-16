@@ -35,6 +35,12 @@ function Player2(spec) {
     }
 }
 
+// function map(image) {
+//     this.profile = image.profile || url"background.png";
+// }
+
+
+
 var fight = {
     init: function () {
         fight.initEvents();
@@ -42,6 +48,27 @@ var fight = {
     initStyling: function (){
     },
     initEvents: function () {
+//////change map/////////
+        $('#map1').on('click', function(event){
+            event.preventDefault();
+            document.getElementById("wrapper").style.backgroundImage = "url('two.png')";
+            console.log("asdf");
+        });
+        $('#map2').on('click', function(event){
+            event.preventDefault();
+            document.getElementById("wrapper").style.backgroundImage = "url('one.png')";
+            console.log("asdf");
+        });
+        $('#map3').on('click', function(event){
+            event.preventDefault();
+            document.getElementById("wrapper").style.backgroundImage = "url('three.png')";
+            console.log("asdf");
+        });
+
+
+
+
+
 /////Change player 1 name//////
         $("#player1").on('submit', function(event) {
             event.preventDefault();

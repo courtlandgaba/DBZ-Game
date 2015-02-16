@@ -7,44 +7,49 @@
 </head>
 <body>
 
-<!--     <div class="map">
-    <button id="map1"></button>
-    <button id="map2"></button>
-    <button id="map3"></button>
-</div> -->
+
 
     <div id="cheat">cheat code: use "cheese" as a user name</div>
 
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
         <div class="holdsbob">
             <div id="bob" class="hide"></div>
         </div>
 
-        <div class="submitnames">
-            <form id="player1" action="">
-                <input type="text" name="name" id="play1" value="" placeholder="Enter Name">
-                <button class="dude" type="submit">Submit Name</button>
-            </form>
-            <form id="player2" action="">
-                 <button class="dude" type="submit">Submit Name</button>
-                 <input type="text" name="name" id="play2" value="" placeholder="Enter Name">
-            </form>
-        </div>
+        <div class="header">
+            <div class="submitnames">
+                <form id="player1" action="">
+                    <input type="text" name="name" id="play1" value="" placeholder="Enter Name">
+                    <button class="dude" type="submit">Submit Name</button>
+                </form>
 
-        <div class="playernames">
-            <h1 id="ply1">Goku</h1>
-            <h1 id="vs">vs.</h1>
-            <h1 id="ply2">Frieza</h1>
-        </div>
+                <div class="map">
+                    <button id="map1"></button>
+                    <button id="map2"></button>
+                    <button id="map3"></button>
+                </div>
 
-        <div class="health-bar" data-total="1000" data-value="1000">
-            <progress id="pl1" value="100" max="100"></progress>
-            <progress id="pl2" value="100" max="100"></progress>
-        </div>
+                <form id="player2" action="">
+                     <button class="dude" type="submit">Submit Name</button>
+                     <input type="text" name="name" id="play2" value="" placeholder="Enter Name">
+                </form>
+            </div>
 
-        <div class="rounds">
-            <span type="text" id="www" value "">0</span>
-            <span type="text" id="mmm" value "">0</span>
+            <div class="health-bar">
+                <progress id="pl1" value="100" max="100"></progress>
+                <progress id="pl2" value="100" max="100"></progress>
+            </div>
+
+            <div class="rounds">
+                <span type="text" id="www" value "">0</span>
+                <span type="text" id="mmm" value "">0</span>
+            </div>
+
+            <div class="playernames">
+                <h1 id="ply1">Goku</h1>
+                <h1 id="vs">vs.</h1>
+                <h1 id="ply2">Frieza</h1>
+            </div>
         </div>
 
         <div class="character-container">
@@ -54,7 +59,7 @@
 
         <button class="startFight hide">BEGIN FIGHT!</button>
     </div>
-    
+
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="game.js"></script>
 </body>
