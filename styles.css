@@ -24,7 +24,9 @@ body, html {
 
 #cheat {
     color:white;
+    position: absolute;
 }
+
 
 .wrapper {
     margin-right: auto;
